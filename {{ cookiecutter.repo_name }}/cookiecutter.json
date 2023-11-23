@@ -1,6 +1,6 @@
 {
     "project_name": "The project Name",
-    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "repo_name": "{{ cookiecutter.project_name | slugify }}",
     "description": "A short description of the lambda function",
     "author_name": "Your Name",
     "email_address": "Your email address",

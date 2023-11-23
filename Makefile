@@ -1,7 +1,7 @@
-PROJECT={{ cookiecutter.project_name }}
+PROJECT=python-project-template
 VERSION=0.1.0
-PYTHON_VERSION={{ cookiecutter.python_version }}
-POETRY_VERSION={{ cookiecutter.poetry_version }}
+PYTHON_VERSION=3.19
+POETRY_VERSION=1.3.1
 SOURCE_OBJECTS=src tests
 
 setup:
