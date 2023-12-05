@@ -9,7 +9,6 @@ setup:
 	pip3 install poetry==${POETRY_VERSION}
 	poetry install --with dev
 
-
 format.black:
 	poetry run black ${SOURCE_OBJECTS}
 format.isort:

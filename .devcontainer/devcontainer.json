@@ -19,7 +19,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pre-commit install && poetry install"
+	"postCreateCommand": "bash git-config.sh && poetry install && pre-commit install"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

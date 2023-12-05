@@ -2,7 +2,7 @@
 name = "Python Project Template"
 version = "0.1.0"
 description = ""
-authors = ["jimmfan <>"]
+authors = ["jimmfan <jimmfan@github.com>"]
 readme = "README.md"
 packages = [{include = "src"}]
 
