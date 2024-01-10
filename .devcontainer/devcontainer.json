@@ -4,7 +4,7 @@
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.10",
-	
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
@@ -19,7 +19,8 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash git-config.sh && poetry install && pre-commit install"
+	"postCreateCommand": "git config --global user.email 'jimmfan@users.noreply.github.com' && git config --global user.name 'jimmfan' && git config --global --add safe.directory \"${containerWorkspaceFolder}\"",
+	"postStartCommand": "poetry install && pre-commit install"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
